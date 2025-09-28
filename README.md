@@ -30,7 +30,7 @@ The app fetches movie data from the [TMDB API](https://www.themoviedb.org/docume
 
     Clone the repository or unzip the project
 ```bash
-git clone https://github.com/AIML-Aditya/movie-library.git
+git clone https://github.com/AIML-Aditya/Movie-library.git
 cd movie library  
 
 Test Cases
