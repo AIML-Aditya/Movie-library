@@ -1,0 +1,38 @@
+:root{
+  --bg:#f8fafc;
+  --card:#ffffff;
+  --accent:#0b5fff;
+  --muted:#64748b;
+}
+*{box-sizing:border-box}
+body{font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#0f172a;}
+.container{max-width:1100px; margin:80px auto 40px; padding:0 16px;}
+/* sticky header */
+.siteHeader{position:fixed;left:0;right:0;top:0;background:white;border-bottom:1px solid #eef2f6;box-shadow:0 2px 6px rgba(2,6,23,0.04);z-index:40}
+.headerInner{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;max-width:1100px;margin:0 auto}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:18px}
+.tag{margin:0;color:var(--muted);font-size:12px}
+.nav a{margin-left:12px;text-decoration:none;color:#334155;padding:6px 8px;border-radius:6px}
+.nav a.active{background:#eef2ff;color:var(--accent)}
+.top h1{margin:0;font-size:28px}
+.subtitle{color:var(--muted);margin:6px 0 14px}
+.searchForm{display:flex;gap:8px;margin-bottom:18px}
+.searchForm input{flex:1;padding:10px;border:1px solid #e2e8f0;border-radius:6px}
+.searchForm button{padding:10px 12px;border-radius:6px;border:0;background:var(--accent);color:white;cursor:pointer}
+.searchForm button[type='button']{background:#6b7280}
+.info{color:var(--muted)}
+.error{color:#b91c1c}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.card{background:var(--card);border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(2,6,23,0.06);display:flex;flex-direction:column}
+.card img{width:100%;height:240px;object-fit:cover;display:block}
+.noimg{height:240px;display:flex;align-items:center;justify-content:center;color:var(--muted);background:#eef2ff}
+.cardBody{padding:10px;display:flex;flex-direction:column;gap:8px}
+.title{font-size:14px;margin:0 0 6px}
+.meta{font-size:12px;color:var(--muted);margin:0}
+.cardActions{margin-top:auto}
+.btn{padding:8px 10px;border-radius:6px;border:0;background:var(--accent);color:white;cursor:pointer}
+.btnAlt{background:#ef4444}
+@media (max-width:600px){
+  .card img{height:200px}
+  .container{margin-top:100px}
+}
